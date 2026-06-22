@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dulce Sabor</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#fff5f8;
+    color:#6d4c5a;
+}
+
+header{
+    background:linear-gradient(135deg, #ffb6c1, #ffd6e7);
+    color:#7a3e58;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 2px 10px rgba(255,182,193,0.4);
+}
+
+header h1{
+    margin:0;
+    font-size:2.5em;
+}
+
+nav{
+    background:#ffc8dd;
+    text-align:center;
+    padding:12px;
+}
+
+nav a{
+    color:#7a3e58;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+    padding:8px 12px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#ff8fab;
+    color:white;
+}
+
+.banner-contenedor{
+    width:90%;
+    max-width:1000px;
+    height:400px;
+    margin:20px auto;
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(255,182,193,0.4);
+}
+
+.banner-slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:opacity 1s;
+}
+
+.banner-slide.activa{
+    opacity:1;
+}
+
+.banner-slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.texto-banner{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:rgba(255,143,171,0.85);
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.contenido{
+    text-align:center;
+    padding:30px;
+}
+
+.contenido h2{
+    color:#d16b86;
+}
+
+footer{
+    background:#ffb6c1;
+    color:#7a3e58;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🍰 Dulce Sabor</h1>
+    <p>Los mejores postres para alegrar tu día</p>
+</header>
+
+<nav>
+    <a href="index.html.html">Inicio</a>
+    <a href="Acerca de nosotros.html">Acerca de nosotros</a>
+    <a href="Carreras.html">Carreras</a>
+    <a href="Misión.html">Misión</a>
+    <a href="Visión.html">Visión</a>
+    <a href="contactos.html">Contacto</a>
+</nav>
+
+<div class="banner-contenedor">
+
+    <div class="banner-slide activa">
+        <img src="imagen.webp" alt="Postres">
+        <div class="texto-banner">
+            <h2>Postres Artesanales</h2>
+            <p>Ingredientes de calidad</p>
+        </div>
+    </div>
+
+    <div class="banner-slide">
+        <img src="Cupcakes y Macarons.webp" alt="Cupcakes">
+        <div class="texto-banner">
+            <h2>Cupcakes y Macarons</h2>
+            <p>Perfectos para celebrar</p>
+        </div>
+    </div>
+
+    <div class="banner-slide">
+        <img src="pasteleria.avif" alt="Pastel">
+        <div class="texto-banner">
+            <h2>Pasteles Especiales</h2>
+            <p>Sabor inolvidable</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="contenido">
+    <h2>🌸 Bienvenido 🌸</h2>
+    <p>
+        Somos una empresa dedicada a la elaboración de postres
+        deliciosos y de calidad.
+    </p>
+</div>
+
+<footer>
+    <p>© 2026 Dulce Sabor. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+var slides = document.querySelectorAll(".banner-slide");
+var indice = 0;
+
+function cambiarSlide() {
+    slides[indice].classList.remove("activa");
+
+    indice++;
+
+    if (indice >= slides.length) {
+        indice = 0;
+    }
+
+    slides[indice].classList.add("activa");
+}
+
+setInterval(cambiarSlide, 3000);
+</script>
+
+</body>
+</html>

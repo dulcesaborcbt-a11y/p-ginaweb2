@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visión - Dulce Sabor</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#fff7fa;
+}
+
+/* ENCABEZADO */
+header{
+    background:#f6bfd0;
+    padding:30px;
+    text-align:center;
+}
+
+header h1{
+    color:#7b3f61;
+    font-size:50px;
+}
+
+header p{
+    color:#7b3f61;
+    margin-top:10px;
+}
+
+/* MENÚ */
+nav{
+    background:#f4a8c0;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:#6b3654;
+    text-decoration:none;
+    margin:0 25px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* BANNER */
+.banner{
+    width:85%;
+    height:300px;
+    margin:30px auto;
+    border-radius:25px;
+
+    background:linear-gradient(
+    rgba(255,182,193,.7),
+    rgba(255,182,193,.7)),
+    url("img/vision.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner h2{
+    color:white;
+    font-size:48px;
+    text-shadow:2px 2px 5px rgba(0,0,0,.3);
+}
+
+/* VISIÓN */
+.vision{
+    width:85%;
+    margin:50px auto;
+}
+
+.titulo{
+    text-align:center;
+    color:#e56796;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.contenedor{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.imagen{
+    flex:1;
+    text-align:center;
+}
+
+.imagen img{
+    width:100%;
+    max-width:450px;
+    border-radius:20px;
+    border:8px solid #ffc1d6;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.texto{
+    flex:1;
+    min-width:300px;
+}
+
+.texto p{
+    color:#70475d;
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* OBJETIVOS */
+.objetivos{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    background:#ffd9e7;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#c44d7a;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#6f4c5f;
+    line-height:1.6;
+}
+
+/* PIE */
+footer{
+    background:#f4a8c0;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    color:#6b3654;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🍰 Dulce Sabor</h1>
+    <p>Los mejores postres para alegrar tu día</p>
+</header>
+
+<nav>
+    <a href="index.html.html">Inicio</a>
+    <a href="Acerca de nosotros.html">Acerca de Nosotros</a>
+    <a href="Carreras.html">Carreras</a>
+    <a href="Misión.html">Misión</a>
+    <a href="Visión.html">Visión</a>
+    <a href="contactos.html">Contacto</a>
+</nav>
+
+<section class="banner">
+    <h2>✨ Nuestra Visión ✨</h2>
+</section>
+
+<section class="vision">
+
+    <h2 class="titulo">🌸 Mirando Hacia el Futuro 🌸</h2>
+
+    <div class="contenedor">
+
+        <div class="imagen">
+            <img src="img/postrevision.jpg" alt="Visión Dulce Sabor">
+        </div>
+
+        <div class="texto">
+
+            <p>
+                Nuestra visión es convertirnos en la repostería de referencia
+                en la región, reconocida por la excelencia de nuestros productos,
+                la innovación en nuestros diseños y el compromiso con la satisfacción
+                de nuestros clientes.
+            </p>
+
+            <br>
+
+            <p>
+                Aspiramos a expandir nuestra presencia, ofreciendo experiencias
+                dulces únicas que formen parte de los momentos más importantes
+                de las familias y comunidades.
+            </p>
+
+            <br>
+
+            <p>
+                Buscamos crecer de manera sostenible, impulsando la creatividad,
+                el trabajo en equipo y la mejora continua para mantenernos como
+                líderes en el mundo de la repostería artesanal.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="objetivos">
+
+        <div class="card">
+            <h3>🎂 Liderazgo</h3>
+            <p>Ser reconocidos como una de las mejores reposterías de la región.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌟 Innovación</h3>
+            <p>Crear nuevos productos y diseños que sorprendan a nuestros clientes.</p>
+        </div>
+
+        <div class="card">
+            <h3>💗 Crecimiento</h3>
+            <p>Expandir nuestros servicios manteniendo la calidad que nos distingue.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Dulce Sabor. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carreras - Dulce Sabor</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#fff7fa;
+}
+
+/* ENCABEZADO */
+header{
+    background:#f6bfd0;
+    padding:30px;
+    text-align:center;
+}
+
+header h1{
+    color:#7b3f61;
+    font-size:50px;
+}
+
+header p{
+    color:#7b3f61;
+    margin-top:10px;
+}
+
+/* MENÚ */
+nav{
+    background:#f4a8c0;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:#6b3654;
+    text-decoration:none;
+    margin:0 25px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* BANNER */
+.banner{
+    width:85%;
+    height:300px;
+    margin:30px auto;
+    border-radius:25px;
+    background:linear-gradient(
+    rgba(255,182,193,.7),
+    rgba(255,182,193,.7)),
+    url("img/carreras.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner h2{
+    color:white;
+    font-size:45px;
+    text-shadow:2px 2px 5px rgba(0,0,0,.3);
+}
+
+/* CONTENIDO */
+.carreras{
+    width:85%;
+    margin:50px auto;
+}
+
+.titulo{
+    text-align:center;
+    color:#e56796;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.descripcion{
+    text-align:center;
+    color:#70475d;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+/* TARJETAS */
+.puestos{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:#ffd9e7;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#c44d7a;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#6f4c5f;
+    line-height:1.6;
+}
+
+/* BENEFICIOS */
+.beneficios{
+    margin-top:50px;
+    background:#ffe7f0;
+    padding:35px;
+    border-radius:20px;
+}
+
+.beneficios h2{
+    text-align:center;
+    color:#d65c89;
+    margin-bottom:20px;
+}
+
+.beneficios ul{
+    list-style:none;
+    text-align:center;
+}
+
+.beneficios li{
+    margin:12px 0;
+    color:#70475d;
+    font-size:18px;
+}
+
+/* PIE */
+footer{
+    background:#f4a8c0;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    color:#6b3654;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🍰 Dulce Sabor</h1>
+    <p>Los mejores postres para alegrar tu día</p>
+</header>
+
+<nav>
+    <a href="index.html.html">Inicio</a>
+    <a href="Acerca de nosotros.html">Acerca de Nosotros</a>
+    <a href="Carreras.html">Carreras</a>
+    <a href="Misión.html">Misión</a>
+    <a href="Visión.html">Visión</a>
+    <a href="contactos.html">Contacto</a>
+</nav>
+
+<section class="banner">
+    <h2>💼 Carreras en Dulce Sabor</h2>
+</section>
+
+<section class="carreras">
+
+    <h2 class="titulo">🌸 Únete a Nuestro Equipo 🌸</h2>
+
+    <p class="descripcion">
+        En Dulce Sabor buscamos personas apasionadas por la repostería,
+        la creatividad y el servicio al cliente. Si deseas crecer profesionalmente
+        en un ambiente dinámico y lleno de sabor, esta es tu oportunidad.
+    </p>
+
+    <div class="puestos">
+
+        <div class="card">
+            <h3>🧁 Repostero/a</h3>
+            <p>
+                Elaboración de pasteles, cupcakes y postres artesanales,
+                manteniendo los más altos estándares de calidad.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎂 Decorador/a</h3>
+            <p>
+                Diseño y decoración de postres personalizados para eventos
+                y celebraciones especiales.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Atención al Cliente</h3>
+            <p>
+                Brindar una atención amable y profesional a nuestros clientes,
+                ayudándolos a elegir los mejores productos.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="beneficios">
+
+        <h2>💗 Beneficios de Trabajar con Nosotros</h2>
+
+        <ul>
+            <li>✨ Ambiente laboral agradable.</li>
+            <li>✨ Oportunidades de crecimiento profesional.</li>
+            <li>✨ Capacitación constante.</li>
+            <li>✨ Trabajo en equipo y desarrollo de habilidades.</li>
+            <li>✨ Descuentos especiales en nuestros productos.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Dulce Sabor. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

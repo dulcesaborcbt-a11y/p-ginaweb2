@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - Dulce Sabor</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#fff7fa;
+}
+
+/* ENCABEZADO */
+header{
+    background:#f6bfd0;
+    padding:30px;
+    text-align:center;
+}
+
+header h1{
+    color:#7b3f61;
+    font-size:50px;
+}
+
+header p{
+    color:#7b3f61;
+    margin-top:10px;
+}
+
+/* MENÚ */
+nav{
+    background:#f4a8c0;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:#6b3654;
+    text-decoration:none;
+    margin:0 25px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* BANNER */
+.banner{
+    width:85%;
+    height:300px;
+    margin:30px auto;
+    border-radius:25px;
+    background:linear-gradient(
+    rgba(255,182,193,.7),
+    rgba(255,182,193,.7)),
+    url("img/contacto.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner h2{
+    color:white;
+    font-size:48px;
+    text-shadow:2px 2px 5px rgba(0,0,0,.3);
+}
+
+/* CONTACTO */
+.contacto{
+    width:85%;
+    margin:50px auto;
+}
+
+.titulo{
+    text-align:center;
+    color:#e56796;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.contenedor{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* INFORMACIÓN */
+.info{
+    flex:1;
+    min-width:300px;
+    background:#ffd9e7;
+    padding:30px;
+    border-radius:20px;
+}
+
+.info h3{
+    color:#c44d7a;
+    margin-bottom:20px;
+}
+
+.info p{
+    color:#70475d;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+/* FORMULARIO */
+.formulario{
+    flex:1;
+    min-width:300px;
+    background:#ffe7f0;
+    padding:30px;
+    border-radius:20px;
+}
+
+.formulario h3{
+    color:#c44d7a;
+    margin-bottom:20px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:2px solid #f4a8c0;
+    border-radius:10px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    background:#f4a8c0;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#e56796;
+}
+
+/* PIE */
+footer{
+    background:#f4a8c0;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    color:#6b3654;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🍰 Dulce Sabor</h1>
+    <p>Los mejores postres para alegrar tu día</p>
+</header>
+
+<nav>
+    <a href="index.html.html">Inicio</a>
+    <a href="Acerca de nosotros.html">Acerca de Nosotros</a>
+    <a href="Carreras.html">Carreras</a>
+    <a href="Misión.html">Misión</a>
+    <a href="Visión.html">Visión</a>
+    <a href="contactos.html">Contacto</a>
+</nav>
+
+<section class="banner">
+    <h2>📞 Contáctanos</h2>
+</section>
+
+<section class="contacto">
+
+    <h2 class="titulo">💗 Estamos para ayudarte 💗</h2>
+
+    <div class="contenedor">
+
+        <div class="info">
+            <h3>Información de Contacto</h3>
+
+            <p>📍 Dirección: Calle Dulce #123</p>
+            <p>📞 Teléfono: (555) 123-4567</p>
+            <p>📧 Correo: dulcesabor@gmail.com</p>
+            <p>🕒 Horario: Lunes a Sábado de 8:00 AM a 8:00 PM</p>
+
+            <br>
+
+            <h3>Redes Sociales</h3>
+
+            <p>📘 Facebook: Dulce Sabor</p>
+            <p>📷 Instagram: @dulcesabor</p>
+            <p>🎵 TikTok: @dulcesabor</p>
+        </div>
+
+        <div class="formulario">
+            <h3>Envíanos un mensaje</h3>
+
+            <form>
+                <input type="text" placeholder="Nombre completo" required>
+
+                <input type="email" placeholder="Correo electrónico" required>
+
+                <input type="text" placeholder="Asunto" required>
+
+                <textarea rows="6" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Dulce Sabor. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

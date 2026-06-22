@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acerca de Nosotros - Dulce Sabor</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#fff7fa;
+}
+
+/* ENCABEZADO */
+header{
+    background:#f6bfd0;
+    padding:30px;
+    text-align:center;
+}
+
+header h1{
+    color:#7b3f61;
+    font-size:50px;
+}
+
+header p{
+    color:#7b3f61;
+    margin-top:10px;
+}
+
+/* MENÚ */
+nav{
+    background:#f4a8c0;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    color:#6b3654;
+    text-decoration:none;
+    margin:0 25px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* BANNER */
+.banner{
+    width:85%;
+    margin:30px auto;
+    background:linear-gradient(
+    rgba(255,182,193,0.7),
+    rgba(255,182,193,0.7)),
+    url("img/postres.jpg");
+
+    background-size:cover;
+    background-position:center;
+    height:300px;
+    border-radius:25px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner h2{
+    color:white;
+    font-size:45px;
+    text-shadow:2px 2px 5px rgba(0,0,0,.3);
+}
+
+/* ACERCA */
+.acerca{
+    width:85%;
+    margin:50px auto;
+}
+
+.titulo{
+    text-align:center;
+    color:#e56796;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.contenedor{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.texto{
+    flex:1;
+    min-width:300px;
+}
+
+.texto p{
+    font-size:18px;
+    color:#70475d;
+    line-height:1.8;
+    text-align:justify;
+}
+
+.imagen{
+    flex:1;
+    text-align:center;
+}
+
+.imagen img{
+    width:100%;
+    max-width:450px;
+    border-radius:20px;
+    border:8px solid #ffc1d6;
+    box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+
+/* TARJETAS */
+.valores{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#ffd9e7;
+    width:280px;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#c44d7a;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#6f4c5f;
+}
+
+/* PIE */
+footer{
+    background:#f4a8c0;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    color:#6b3654;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🍰 Dulce Sabor</h1>
+    <p>Los mejores postres para alegrar tu día</p>
+</header>
+
+<nav>
+    <a href="index.html.html">Inicio</a>
+    <a href="Acerca de nosotros.html">Acerca de Nosotros</a>
+    <a href="Carreras.html">Carreras</a>
+    <a href="Misión.html">Misión</a>
+    <a href="Visión.html">Visión</a>
+    <a href="contactos.html">Contacto</a>
+</nav>
+
+<section class="banner">
+    <h2>Acerca de Nosotros</h2>
+</section>
+
+<section class="acerca">
+
+    <h2 class="titulo">🌸 Nuestra Historia 🌸</h2>
+
+    <div class="contenedor">
+
+        <div class="texto">
+            <p>
+                En Dulce Sabor nos dedicamos a la elaboración de postres
+                artesanales preparados con ingredientes frescos y de la mejor
+                calidad. Nuestro objetivo es crear experiencias inolvidables
+                a través de sabores únicos y presentaciones especiales.
+            </p>
+
+            <br>
+
+            <p>
+                Desde nuestros inicios hemos trabajado con pasión,
+                creatividad y compromiso para llevar felicidad a cada
+                celebración. Cada pastel, cupcake y postre refleja el amor
+                que sentimos por la repostería.
+            </p>
+        </div>
+
+        <div class="imagen">
+            <img src="img/pastel.jpg" alt="Pasteles">
+        </div>
+
+    </div>
+
+    <div class="valores">
+
+        <div class="card">
+            <h3>💗 Calidad</h3>
+            <p>Utilizamos ingredientes frescos y seleccionados.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧁 Creatividad</h3>
+            <p>Diseños únicos para cada ocasión especial.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌷 Compromiso</h3>
+            <p>La satisfacción de nuestros clientes es nuestra prioridad.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Dulce Sabor. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
